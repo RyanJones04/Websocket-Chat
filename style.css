@@ -1,0 +1,40 @@
+#login-container{
+    border: 1px black solid;
+    margin: auto;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-inputs{
+    margin: auto;
+}
+
+.login-text{
+    margin: auto;
+    margin-top: 10px;
+}
+
+#sendBtn{
+    margin-bottom: 10px;
+}
+
+#chat-container{
+    border: 1px black solid;
+    margin: auto;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chat-elements{
+    resize: none;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#sendMsg{
+    margin-bottom: 10px;
+}

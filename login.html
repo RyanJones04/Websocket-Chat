@@ -3,10 +3,15 @@
     <head>
         <Title>Login</Title>
         <script type="text/javascript" src="login.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type="text" name="name" id="name">
-        <input type="text" name="pass" id="pass">
-        <button id="sendBtn" onclick="sendPass()">Enter</button>
+        <div id="login-container">
+            <p class="login-text">Name</p>
+            <input type="text" name="name" id="name" class="login-inputs">
+            <p class="login-text">Password</p>
+            <input type="password" name="password" id="pass" class="login-inputs">
+            <button id="sendBtn" class="login-text" onclick="sendPass()">Enter</button>
+        </div>
     </body>
 </html>

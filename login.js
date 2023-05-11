@@ -1,5 +1,6 @@
-const ws = new WebSocket("ws://localhost:8082");
-const phrase = "secret";
+const addr = "localhost"
+const port = "8082"
+const ws = new WebSocket("ws://"+addr+":"+port);
 
 sessionStorage.setItem("passed", "no");
 

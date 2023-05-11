@@ -3,10 +3,13 @@
     <head>
         <title>Chat Page</title>
         <script type="text/javascript" src="chat.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <p id="msgs"></p>
-        <input type="text" name="msgBox" id="msgBox">
-        <button id="sendBtn" onclick="sendMsg()">Enter</button>
+        <div id="chat-container">
+            <textarea id="chat-box" class="chat-elements" rows="15" cols="40" readonly></textarea>
+            <input type="text" name="msgBox" id="msgBox" class="chat-elements">
+            <button id="sendMsg" class="chat-elements" onclick="sendMsg()">Enter</button>
+        </div>
     </body>
 </html>

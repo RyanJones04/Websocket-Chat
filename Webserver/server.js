@@ -1,15 +1,16 @@
 const WebSocket = require("ws");
 const ryjj18 = require("./ryjj18");
 
-const wss = new WebSocket.Server({ port: 8082 });
-var webSockets = {};
-var userCount = 0;
-
 var readline = require("readline-sync");
 
 var pword = readline.question("What would you like the chat password to be: ");
 
 var pwordH = ryjj18.ryjj18(pword+"+pass", 5);
+
+const portNum = 8082
+const wss = new WebSocket.Server({ port: portNum });
+var webSockets = {};
+var userCount = 0;
 
 wss.broadcast = function broadcast(data){
     wss.clients.forEach(function each(client){
